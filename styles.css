@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #1f1717;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    background: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 80px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.title {
+    font-family: 'Pirata One', cursive;
+    font-size: 35px;
+    color: #FFD700;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px #ff4500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    animation: titleBounce 1.5s ease-in-out forwards;
+}
+
+@keyframes titleBounce {
+    0% { transform: scale(0.8); opacity: 0; }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border: 2px solid rgb(135, 36, 36);
+    padding: 20px;
+}
+
+.character-list {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.character-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.character-list li {
+    background: rgb(160, 29, 29);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.title1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #1F2937;
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.info:hover {
+    transform: scale(1.05);
+}
+
+.info img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 10px;
+}
+
+.text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #222831, #393E46);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 215, 0, 0.8);
+}
+
+.para {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ffffff;
+    text-align: center;
+    max-width: 90%;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.container2:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #FFD700;
+    background: transparent;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+    margin: 10px;
+}
+
+.button:hover {
+    background: #FFD700;
+    color: #222831;
+    box-shadow: 0px 6px 15px rgba(255, 215, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.footer {
+    background: #222831; /* Dark background */
+    color: #FFD700; /* Gold text */
+    text-align: center;
+    padding: 30px 20px; /* Increased padding for better spacing */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+    box-shadow: 0px -4px 10px rgba(255, 215, 0, 0.3); /* Soft shadow at the top */
+    border-top: 2px solid rgba(255, 215, 0, 0.5); /* Gold border at the top */
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the social links */
+    gap: 20px; /* Space between icons */
+}
+
+.social {
+    text-decoration: none;
+    color: #FFD700; /* Gold color */
+    font-size: 24px; /* Increased icon size */
+    transition: all 0.3s ease-in-out;
+    display: inline-flex; /* Use inline-flex to align icon and text */
+    align-items: center; /* Center the icon and text vertically */
+    padding: 10px; /* Padding around the icon */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.social:hover {
+    color: #fff; /* Change color on hover */
+    background: rgba(255, 215, 0, 0.2); /* Light gold background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Specific hover colors for each platform */
+.github:hover {
+    color: #c9d1d9; /* GitHub Grey */
+}
+.instagram:hover {
+    color: #E4405F; /* Insta Pink */
+}
+.linkedin:hover {
+    color: #0077b5; /* LinkedIn Blue */
+}
+.footer {
+    background: linear-gradient(135deg, #222831, #393E46); /* Gradient background */
+}
+.footer p {
+    font-size: 20px; /* Larger font size for the paragraph */
+    margin-bottom: 10px; /* Space below the paragraph */
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b82f6;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.cta-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cta-content p {
+    font-size: 14px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #7898ca;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2563eb;
+    color: white;
+}
